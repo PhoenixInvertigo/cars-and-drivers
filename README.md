@@ -116,4 +116,6 @@ You will need to implement a No Args Constructor.
 You will need to implement a .toString() method.
 You will need to implement a .equals() method.
 
+Complete these steps for the Driver class first, then complete them for the Car class.
+
 Good luck.
