@@ -8,6 +8,7 @@ At its simplest, an object is used like any other variable. It is declared the s
 ```
 Animal animal = new Animal();
 ```
+Note: The object has to be added as an import to be used like this. Begin typing the capitalized class word, then once the dropdown has selected the correct class, press enter, autocompleting the Class and auto adding the required import.
 
 The new keyword is followed by the object's class name (capitalized), as well as parenthesis. This name and parenthesis are called a Constructor.
 A Constructor is the method which is called to create a new instance of an object.
@@ -89,6 +90,7 @@ This is how to explicitly create getters and setters for an object's fields. How
 @EqualsAndHashCode //this creates a .equals() and .hashCode() method for your class, allowing objects to be compared by their values instead of their memory locations
 @Data //this is equivalent to @Getter, @Setter, @RequiredArgsConstructor, @ToString, and @EqualsAndHashCode all at once
 ```
+While you're typing this annotation, the option to import them will appear in a dropdown list. Type part of the annotation, then hit enter to both autocomplete the annotation and add the required import statement.
 
 I can simply use these annotations to remove boilerplate code and reduce it to this:
 
