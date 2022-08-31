@@ -25,17 +25,17 @@ public class Animal{
 }
 ```
 
-Typically, an object's class will have some variables of its own, called fields. Let's create two, numberOfLegs and kingdom. When an object has fields, it is common for there to be a Constructor which takes all of them as arguments. The constructor is a method, so its variables are block-scoped. To pass them to the class, use the this keyword and the dot operator. The Class and Constructor look like this:
+Typically, an object's class will have some variables of its own, called fields. Let's create two: numberOfLegs and kingdom. When an object has fields, it is common for there to be a Constructor which takes all of them as arguments. The constructor is a method, so its variables are block-scoped. To pass them to the class, use the this keyword and the dot operator. The Class and Constructor look like this:
 
 ```
 public class Animal{
 
   private int numberOfLegs;
-  private String kingdom;
+  private String phylum;
   
-  public Animal(int numberOfLegs, String kingdom){
+  public Animal(int numberOfLegs, String phylum){
     this.numberOfLegs = numberOfLegs; //This is fine because this.numberOfLegs refer's to the class's field, and numberOfLegs refer's to the code block's
-    this.kingdom = kingdom;
+    this.phylum = phylum;
   }
 
 }
@@ -53,27 +53,27 @@ Additionally, there is a principle of Object Oriented Programming called Encapsu
 public class Animal{
 
   private int numberOfLegs;
-  private String kingdom;
+  private String phylum;
   
-  public Animal(int numberOfLegs, String kingdom){
+  public Animal(int numberOfLegs, String phylum){
     this.numberOfLegs = numberOfLegs;
-    this.kingdom = kingdom;
+    this.phylum = phylum;
   }
 
   public int getNumberOfLegs(){
     return this.numberOfLegs;
   }
   
-  public String getKingdom(){
-    return this.kingdom;
+  public String getPhylum(){
+    return this.phylum;
   }
   
   public void setNumberOfLegs(int numberOfLegs){
     this.numberOfLegs = numberOfLegs; //this works the same way the Constructor does
   }
   
-  public void setKingdom(String kingdom){
-    this.kingdom = kingdom;
+  public void setPhylum(String phylum){
+    this.phylum = phylum;
   }
 }
 ```
@@ -100,7 +100,7 @@ I can simply use these annotations to remove boilerplate code and reduce it to t
 public class Animal{
 
   private int numberOfLegs;
-  private String kingdom;
+  private String phylum;
 
 }
 ```
